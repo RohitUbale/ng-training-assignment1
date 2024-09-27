@@ -1,0 +1,168 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.task-form, .task-list {
+  margin: 20px 0;
+}
+
+.task-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.task-form input, .task-form select, .task-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task-form button[type="button"] {
+  background-color: #6c757d;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+
+.task-form button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+.task-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-list th, .task-list td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.task-list th {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.task-list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.task-list tr:hover {
+  background-color: #ddd;
+}
+
+.task-list button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-list button.edit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.task-list button.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.task-list button.edit:hover {
+  background-color: #218838;
+}
+
+.task-list button.delete:hover {
+  background-color: #c82333;
+}
+
+.confirm-delete {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.confirm-delete-header {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.confirm-delete p {
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.confirm-delete button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-delete button.no {
+  background-color: greenyellow;
+  color: #fff;
+}
+
+.confirm-delete button.yes {
+  background-color: yellow;
+  color: #000;
+}
+
+.confirm-delete button.no:hover {
+  background-color: #5a6268;
+}
+
+.confirm-delete button.yes:hover {
+  background-color: #f0ad4e;
+}
